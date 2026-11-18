@@ -1,25 +1,22 @@
  # 🛍️ Customer Shopping Behavior & Revenue Analysis
 
-## 📌 Project Overview
+ 📌 Project Overview
 This end-to-end data analytics project explores  3,900 customer shopping transactions across 18 attributes—including customer demographics, product categories, seasonal trends, subscription status, and discount usage. The goal is to clean raw retail data, uncover key revenue drivers, and build an interactive Power BI dashboard to support data-driven marketing and inventory decisions.
+  # Customer Shopping Behavior Analysis
 
-## 🛠️ Tools & Technologies Used
-Python (Pandas, NumPy):  Data cleaning, missing value imputation, and exploratory data analysis (EDA).
-SQL: Business querying, customer segmentation, and aggregation analysis.
-Power BI: Interactive dashboarding, DAX measures, and visual storytelling.
-Excel: Initial data inspection and validation.
+ 
 
-## 📂 Dataset Summary
- Total Records: 3,900 customer transactions
- Total Features: 18 columns (`Customer ID`, `Age`, `Gender`, `Item Purchased`, `Category`, `Purchase Amount (USD)`, `Location`, `Size`, `Color`, `Season`, `Review Rating`, `Subscription Status`, `Shipping Type`, `Discount Applied`, `Promo Code Used`, `Previous Purchases`, `Payment Method`, `Frequency of Purchases`)
-* **Product Categories:** Clothing, Footwear, Outerwear, Accessories
+  🎯 Business Goal
+Identify how demographics, discounts, shipping methods, and subscription status impact sales to help a retail company boost customer loyalty and optimize marketing spend.
 
-## 🧹 Data Cleaning & Preparation
-1.  Handled Missing Values :  Identified missing entries in the `Review Rating` column and imputed them using category-wise median ratings to preserve data integrity without skewing distributions.
-2.  Data Type Standardization : Verified numeric formatting for `Purchase Amount (USD)`, `Age`, and `Previous Purchases`, and standardized categorical labels.
-3.  Feature Engineering : Created customer age brackets (Young Adult, Adult, Middle-Aged, Senior) and purchase frequency groups for deeper segmentation.
+ 🛠️ What I Did (Step-by-Step)
+1. Data Cleaning (Python): Imputed 37 missing ratings via category medians, standardized columns (`snake_case`), engineered `age_group` segments, and removed duplicate columns (`promo_code_used`).
+2. Business Analysis (SQL): Wrote 10 queries to segment customers (*New*, *Returning*, *Loyal*) and evaluate revenue across gender, age, shipping speed, and discount usage.
+3. Visualization (Power BI):Built an interactive dashboard tracking **Total Revenue ($233,081)**, **Avg Spend ($59.76)**, and **Avg Rating (3.75)** with dynamic slicers.
 
-## 📊 Key Insights & Findings
-Category & Seasonal Performance: Analyzed revenue distribution across Clothing, Footwear, Outerwear, and Accessories across all four seasons (`Winter`, `Spring`, `Summer`, `Fall`) to identify peak demand periods.
- Subscription & Discount Impact: Compared average order value (AOV) and repeat purchase counts (`Previous Purchases`) between subscribed (`Yes`) and non-subscribed (`No`) shoppers.
- Shipping & Payment Preferences : Evaluated customer preference across shipping speeds (`Express`, `Free Shipping`, `Next Day Air`, `Store Pickup`) and digital payment methods (`Venmo`, `PayPal`, `Credit Card`, `Debit Card`).
+  📊 Key Findings & Business Impact
+* Subscription Opportunity:73% of customers are unsubscribed—offering free Express shipping perks can convert repeat buyers into recurring members.
+*  Top Revenue Drivers: Young Adults ($62K) and Clothing ($104.2K) generate the highest sales, signaling where to focus ad spend.
+*  Margin Protection: Top products (Blouse, Shirt, Dress) sell strongly without heavy discounting—reducing promos on these items preserves profit margins.
+
+ 
